@@ -1,0 +1,130 @@
+.boxPageCategoria
+     // .boxContentInterno
+     //      padding-bottom: 300px
+     .boxFilters
+          background: $whiteLight
+          padding: 1.75rem .5rem
+          border-radius: 10px
+          border: 1px solid rgba($grayLight3,.2)
+          .boxViewOptionFilt
+               position: fixed
+               top: 0
+               left: -100%
+               width: 100%
+               min-height: 100vh
+               background: rgba(white,1)
+               z-index: 600 
+               box-sizing: border-box
+               padding: 2rem 1rem
+               height: 300px
+               overflow: scroll
+               @media screen and (min-width: 1200px)
+                    position: relative
+                    top: auto
+                    left: auto
+                    width: auto
+                    min-height: auto
+                    background: transparent
+                    z-index: 2
+                    box-sizing: border-box
+                    padding: 0
+                    height: auto
+                    overflow: auto
+               &.active
+                    left: 0
+                    @media screen and (min-width: 1200px)
+                         left: auto
+               .boxCloseFilter
+                    display: block
+                    @media screen and (min-width: 1200px)
+                         display: none
+                    svg
+                         width: 2rem
+                         height: 2rem
+                         color: black
+          .accordion-body
+               padding: .5rem 1.5rem 2rem 2rem
+               a
+                    text-decoration: none
+                    margin-bottom: .75rem
+                    display: block
+                    &:last-child
+                         margin-bottom: 0
+                    &.active
+                         .boxCheck
+                              background: $grayLight3
+                    .boxCheck
+                         width: 20px
+                         height: 20px
+                         border: 1px solid rgba($grayLight3,.2)
+                         margin-right: .5rem
+                         border-radius: 5px
+                         transition: .5s ease-in-out background
+                    p
+                         @include fontFree($grayLight3, 14px,12px,12px,12px, $fontDescriptionBold)
+          .accordion-item
+               border-radius: 20px
+               overflow: hidden
+               background-color: white
+               &:not(:first-of-type)
+                    border-top: 1px solid rgba(0, 0, 0, 0.125)
+               .accordion-button
+                    @include fontFree($grayLight3, 16px,14px,14px,14px, $fontDescriptionBold)
+                    box-shadow: none
+                    &:not(.collapsed)
+                         background-color: white
+                         box-shadow: none
+                         color: $grayLight3
+                         &::after
+                              background-image: url('/frontend/images/arrow.svg')
+                    &::after
+                         background-image: url('/frontend/images/arrow.svg')
+                    &:focus,
+                    &:active
+                         border-color: transparent
+                         box-shadow: none
+          .boxRowFilter
+               padding: 1.8rem 1rem 2rem
+               background: white
+               border-radius: 10px
+               border: 1px solid rgba($grayLight3,.2)
+               margin-top: 1rem
+               h3
+                    @include fontFree($grayLight3, 16px,14px,14px,14px, $fontDescriptionBold)
+               .boxInputSearch
+                    .iconSearch
+                         position: absolute
+                         top: 45%
+                         transform: translateY(-50%)
+                         right: 0.75rem
+                         img
+                              width: 20px
+                    input[type="text"]
+                         border: 1px solid rgba($grayLight3,.2)
+                         width: 100%
+                         height: 40px
+                         border-radius: 15px
+                         box-sizing: border-box
+                         @include fontFree($grayLight4, 14px,14px,12px,12px, $fontDescriptionMedium)
+                         &::placeholder
+                              color: $grayLight4
+          .filterHead
+               padding: 0 1rem
+               .imgFilter
+                    width: 30px
+               p
+                    @include fontFree($grayLight3, 16px,14px,14px,12px, $fontDescriptionBold)
+                    margin-left: .5rem
+               .boxButtonTransparent
+                    width: 100px
+                    height: 38px
+                    @media screen and (min-width: 992px)
+                         width: 100px
+                    @media screen and (min-width: 1200px)
+                         width: 100px
+                    @media screen and (min-width: 1400px)
+                         width: 100px
+                    button
+                         border: 1px solid rgba($grayLight3,.5)
+                         color: $grayLight3
+                         border-radius: 19px

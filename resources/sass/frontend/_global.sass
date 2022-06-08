@@ -1,0 +1,551 @@
+a
+     text-decoration: none
+     &:focus,
+     &:hover
+          outline: transparent
+          box-shadow: none
+h1,
+h2,
+h3,
+p
+     margin: 0 
+.contentBlur
+     &.active
+          filter: blur(2px)
+
+p
+     @include fontDescription($grayLight)
+     &.legal
+          font-size: 12px !important
+     span.bold,
+     &.bold
+          font-family: $fontDescriptionBold !important
+     &.big
+          font-size: 25px
+          color: $grayLight2
+          line-height: 1em
+          @media screen and (min-width: 992px)
+               font-size: 30px
+               line-height: 1em
+          @media screen and (min-width: 1200px)
+               font-size: 40px
+               line-height: 1.25em
+          @media screen and (min-width: 1400px)
+               font-size: 46px
+               line-height: 1.25em
+     &.mediun
+          font-size: 12px
+          line-height: 1em
+          @media screen and (min-width: 992px)
+               font-size: 12px
+               line-height: 1em
+          @media screen and (min-width: 1200px)
+               font-size: 14px
+               line-height: 1.5em
+          @media screen and (min-width: 1400px)
+               font-size: 14px
+               line-height: 1.5em
+.boxButton
+     @include styleButton()
+     &.fullLarge
+          width: 100% !important
+     &.large
+          width: 100%
+          @media screen and (min-width: 992px)
+               width: 250px
+          @media screen and (min-width: 1200px)
+               width: 280px
+          @media screen and (min-width: 1400px)
+               width: 300px
+     &.bggris
+          @include styleButton(#fafaf4)
+          button
+               color: rgba(#00ae9e,.95)
+.boxButtonLink
+     @include styleButtonLink()
+     &.large
+          width: 100%
+          @media screen and (min-width: 992px)
+               width: 250px
+          @media screen and (min-width: 1200px)
+               width: 280px
+          @media screen and (min-width: 1400px)
+               width: 300px
+.boxButtonTransparent
+     @include styleButtonTransparent()
+.boxLink
+     @include styleLink($yellow, $yellow)
+.boxTitle
+     h1,
+     h2
+          @include fontTitle($blueLight)
+          letter-spacing: -1px
+     h2,
+     h1
+          &.small
+               font-size: 18px
+               color: $gray
+               @media screen and (min-width: 992px)
+                    font-size: 24px
+               @media screen and (min-width: 1200px)
+                    font-size: 26px
+               @media screen and (min-width: 1400px)
+                    font-size: 28px
+          &.mediun
+               font-size: 28px
+               color: $gray
+               @media screen and (min-width: 992px)
+                    font-size: 33px
+               @media screen and (min-width: 1200px)
+                    font-size: 38px
+               @media screen and (min-width: 1400px)
+                    font-size: 42px
+     h4
+          @include fontFree($gray, 18px,16px,14px,12px, $fontSubTitle)
+          line-height: 1.5em
+.txtUppercase
+     text-transform: uppercase !important
+.boxSubTitle
+     h2,
+     h3,
+     h4,
+     h5
+          @include fontSubTitle($lightBlue, $fontSubTitle)
+          &.small
+               font-size: 18px
+               color: $gray
+               @media screen and (min-width: 992px)
+                    font-size: 24px
+               @media screen and (min-width: 1200px)
+                    font-size: 26px
+               @media screen and (min-width: 1400px)
+                    font-size: 28px
+.relative
+     position: relative
+
+.fullHeight
+     height: 100% !important
+.fullwidth
+     width: 100% !important
+.txtCenter
+     text-align: center !important
+.txtUpperCase
+     text-transform: uppercase !important
+.txtColorGray
+     color: $grayDark !important
+.colorYellow
+     color: $yellow !important
+.colorblueLight
+     color: $blueLight !important
+.colorGreenLight
+     color: $greenLight !important
+.bgColorGrayLight2
+     background-color: $grayLight2 !important
+.bgRojo
+     background: #d01010 !important
+.bgBlanco
+     background: #fff !important
+.bgAzul
+     background: rgba($lightBlue,.9) !important
+.bgCeleste
+     background: #1DB6F7 !important
+.bgVerde
+     background: #4ea932 !important
+.bgNegro
+     background: #000 !important
+.bgGrisOscuro
+     background: #303030 !important
+.bgGris
+     background: #5d5d5d !important
+.bgNaranja
+     background: #ffae00 !important
+.bgVerdePastel
+     background: #76be9a !important
+.bgAmarrillo
+     background: #fce91a !important
+.bgGuinda
+     background: #9a1c1c !important
+.boxSocial
+     padding: .5rem 0
+     a
+          width: 30px
+          height: 30px
+          &.iconSVG
+               width: 25px
+               height: 25px
+               display: block
+               background: white
+               border-radius: 50%
+               overflow: hidden
+               svg
+                    fill: $green
+               &.blue
+                    svg
+                         fill: $blue
+          img
+               width: 100%
+               height: 100%
+               display: block
+          &:first-child
+               margin-right: .35rem
+.pageConstruccion
+     p
+          @include fontFree($gray, 38px,33px,30px,26px, $fontScroll)
+          text-transform: uppercase
+     .imgAux
+          width: 320px
+          @media screen and (min-width: 992px)
+               width: 300px
+          @media screen and (min-width: 1200px)
+               width: 400px
+     .imgAux2
+          width: 150px
+          @media screen and (min-width: 992px)
+               width: 200px
+          @media screen and (min-width: 1200px)
+               width: 250px
+     .imgAux3
+          width: 250px
+          @media screen and (min-width: 992px)
+               width: 250px
+          @media screen and (min-width: 1200px)
+               width: 300px
+     .boxLogos
+          margin-top: 1.5rem
+          width: 300px
+          @media screen and (min-width: 992px)
+               width: 400px
+          a
+               width: 100%
+               img
+                    width: 100%
+.toscew
+     background-color: transparent
+     transform: skewY(-4deg)
+     .tounscew
+          transform: skewY(4deg)
+.boxShare
+     position: absolute
+     width: 100%
+     left: 0
+     bottom: -5rem
+     z-index: 333
+     background-color: #00b388
+     padding: 3rem 0
+     @media screen and (min-width: 992px)
+          padding: 2rem 0 6rem
+          bottom: -8rem
+     a
+          width: 100%
+          svg
+               width: 2rem
+               height: 2rem
+               color: white
+.owl-dots
+     position: absolute
+     top: 50%
+     transform: translateY(-50%)
+     right: 2rem
+     button
+          width: 20px
+          height: 20px
+          border-radius: 50%
+          border: 1px solid white !important
+          display: block
+          margin-bottom: .65rem !important
+          &.active
+               background-color: white !important
+.owl-nav
+     // transform: translateY(-30%) skewY(4deg) !important
+     .owl-prev,
+     .owl-next
+          position: absolute
+          left: 0rem
+          right: auto
+          bottom: 5rem !important
+          top: auto !important
+          border: 0px solid red
+          // width: 100%
+          background-color: rgba(0,0,0,0.5) !important
+          // width: 40px !important
+          // height: 82px !important
+          // padding: .5rem !important
+          @media screen and (min-width: 992px)
+               top: 50% !important
+               bottom: auto !important
+               transform: translateY(30%) !important
+               background-color: transparent !important
+               left: 1rem
+               // padding: 0rem !important
+          span
+               // background-image: url('/frontend/images/izq.png') !important
+               background-size: cover !important
+               background-repeat: no-repeat !important
+               background-position: center !important
+               width: 40px !important
+               height: 82px !important
+               text-indent: 3000px  
+               display: block
+               overflow: hidden
+
+         
+          // span
+          //      display: none
+     .owl-next
+          right: 0rem
+          left: auto
+          @media screen and (min-width: 992px)
+               right: 4.5rem
+          span
+               // background-image: url('/frontend/images/dre.png') !important
+               background-size: cover !important
+               background-repeat: no-repeat !important
+               background-position: center !important
+.boxBannerTitles
+     h2
+          @include fontFree(white, 120px,90px,80px,40px, 'Saira Condensed')
+          font-weight: 700
+          line-height: .9em
+     h3
+          @include fontFree(white, 32px,28px,18px,14px, 'Saira Condensed')
+          font-weight: 700 
+.boxBannerTitles2
+     padding-left: 1.5rem
+     h2
+          @include fontFree(white, 80px,70px,55px,29px, 'Saira Condensed')
+          font-weight: 700
+          line-height: 1.5em
+          @media screen and (min-width: 992px)
+               line-height: .9em
+          
+     h3
+          @include fontFree(white, 28px,28px,18px,14px, 'Saira Condensed')
+          font-weight: 700   
+     p
+          @include fontFree(white, 20px,20px,18px,12px, $fontDescription)
+          line-height: 1.5em  
+          @media screen and (min-width: 992px)
+               line-height: 1.5em
+          @media screen and (min-width: 1200px)
+               line-height: 1.5em
+          @media screen and (min-width: 1400px)
+               line-height: 1.5em    
+          br
+               display: none
+               @media screen and (min-width: 992px)
+                    display: block
+     .breadcrumbs
+          background: $lightBlue
+          display: inline-block
+          padding: .15rem 1rem
+          border-radius: 5px
+          position: relative
+          z-index: 10
+          svg
+               fill: white
+               color: white
+               margin-right: .25rem
+          a
+               @include fontFree(white, 14px,14px,14px,12px, $fontDescriptionMedium)
+               margin-right: .25rem
+               text-decoration: none
+.pContent
+     padding: 0 20px
+     @media screen and (min-width: 992px)
+          padding: 0
+.boxBannerSubTitles
+     width: 330px
+     border: 0px solid red
+     position: relative
+     right: -3rem
+     top: -5rem
+     @media screen and (min-width: 992px)
+          right: -5.5rem
+          top: -3rem
+          width: 330px
+     @media screen and (min-width: 1200px)
+          right: -5.5rem
+          top: -3rem
+          width: 330px
+     @media screen and (min-width: 1400px)
+          right: -11.5rem
+          top: -4rem
+          width: 507px
+     &:before
+          content: ""
+          position: absolute
+          width: 600px
+          height: 3px
+          background-color: $greenLight2
+          bottom: -2.5rem
+          left: 0rem
+     h3
+          @include fontFree($gray, 44px,28px,28px,26px, 'PoppinsRegular')
+          line-height: 1.5em
+          @media screen and (min-width: 992px)
+               line-height: 1.5em
+          @media screen and (min-width: 1200px)
+               line-height: 1.25em
+          @media screen and (min-width: 1400px)
+               line-height: 1.1em
+          span
+               font-family: 'PoppinsMedium'
+
+.backOverflow
+     overflow: hidden
+     width: 100%
+     box-sizing: border-box
+.boxBackgroundBlue
+     background: rgba($lightBlue, .8)
+     border-radius: 20px 20px 90px 20px
+     padding: 3rem 1rem 3rem 1rem
+     @media screen and (min-width: 992px)
+          padding: 3rem 1rem 3rem 4rem
+     .boxIcon
+          height: 50px
+          margin: 0 auto 1rem
+          text-align: center
+          img
+               height: 100%
+               object-fit: contain
+     p
+          color: white
+          &.textIcon
+               @include fontFree(white, 18px,16px,14px,12px, $fontDescriptionMedium)
+               line-height: 1.5em
+               @media screen and (min-width: 992px)
+                    line-height: 1.5em
+               @media screen and (min-width: 1200px)
+                    line-height: 1.35em
+               @media screen and (min-width: 1400px)
+                    line-height: 1.15em
+.boxBannerSmall
+     img
+          width: 100%
+.backgroundGlobal
+     background: url('/frontend/images/fondo.jpg')
+     background-size: cover
+     background-repeat: no-repeat
+     background-position: center
+.boxContentInterno
+     padding: 2rem 1rem 5rem
+     @media screen and (min-width: 768px)
+          padding: 2.5rem 1rem 10rem
+     @media screen and (min-width: 992px)
+          padding: 0rem 1rem 10rem
+     @media screen and (min-width: 1200px)
+          padding: 2.5rem 1rem 10rem
+
+.listProducts
+     .viewProducts
+          a
+               flex-basis: 100%
+               margin-bottom: 1.35rem
+               transition: .5s all ease-in
+               // overflow: hidden
+
+               @media screen and (min-width: 768px)
+                    flex-basis: 48%
+               @media screen and (min-width: 992px)
+                    flex-basis: 32%
+               @media screen and (min-width: 1200px)
+                    flex-basis: 32%
+               .boxInfo
+                    background: $lightBlue
+                    border-radius: 10px
+                    padding: 2rem 1rem 1.25rem 1.5em
+                    margin-top: -1.5rem
+                    border: 1px solid rgba($lightBlue,1)
+                    
+                    h3
+                         @include fontFree(white, 18px,16px,16px,14px, $fontDescriptionMedium)
+                         line-height: 1.85em
+                    p
+                         @include fontFree(white, 12px,10px,12px,12px, $fontDescription)
+                         line-height: 1.45em
+               .boxImage
+                    height: 380px
+                    border-radius: 10px
+                    overflow: hidden
+                    width: 100%
+                    border: 0px solid rgba($grayLight3,.2)
+                    position: relative
+                    transition: .5s all ease-in
+                    // left: -2px
+                    @media screen and (min-width: 1200px)
+                         height: 300px
+                    &::after,
+                    &::before
+                         transition: .5s all ease-in
+                    img
+                         height: 100%
+                         width: 100%
+                         object-fit: cover
+               &:hover
+                    .boxImage
+                         &::before
+                              content: ''
+                              background-image: url('/frontend/images/search.png')
+                              background-repeat: no-repeat
+                              background-position: center
+                              position: absolute
+                              top: 50%
+                              left: 50%
+                              transform: translate(-50%,-50%)
+                              z-index: 5
+                              width: 122px
+                              height: 49px
+                              background-size: contain
+                         &::after
+                              content: ''
+                              position: absolute
+                              top: 0
+                              left: 0
+                              width: 100%
+                              height: 100%
+                              background-color: rgba($lightBlue, .8)
+     .boxHeader
+          border: 1px solid rgba($grayLight3,.2)
+          background: white
+          border-radius: 10px
+          padding-left: 1.5rem
+          width: 100%
+          box-sizing: border-box
+          h2
+               @include fontFree($grayLight3, 16px,14px,12px,12px, $fontDescriptionMedium)
+               line-height: 4em
+
+.boxLoadForm
+     display: none
+     &.active
+          display: block
+
+.alert
+     &.ocultar
+          display: none !important
+.boxBotonAccess
+     width: 180px
+     @media screen and (min-width: 992px)
+          width: auto
+.boxWhatsApp
+     position: fixed
+     bottom: 2rem
+     right: 1rem
+     z-index: 200
+     .boxTextWhatsApp
+          position: absolute
+          top: .5rem
+          left: 0rem
+          background: rgb(37, 211, 102)
+          width: 180px
+          padding: 0.5rem .75rem
+          border-radius: 10px
+          opacity: 0
+          z-index: 2
+          p
+               @include fontFree(white, 12px,12px,12px,12px, $fontDescriptionMedium)
+     img
+          width: 3.5rem
+          height: 3.5rem
+          position: relative 
+          z-index: 3

@@ -1,0 +1,252 @@
+#slider-1
+     position: relative
+     z-index: 20
+.boxPageProducto
+     .boxColor
+          width: 20px
+          height: 20px
+          margin-right: .25rem
+          border-radius: 50%
+     .componentComplementario
+          .boxSubTitle
+               padding-bottom: 3rem
+               h2
+                    color: $grayLight5
+     .boxDetalleProduct
+          padding-bottom: 4rem
+          .container
+               border-bottom: 1px solid $lightBlue
+               padding: 0rem 0 7rem
+               .boxSlider
+                    .owl-nav
+                         // transform: translateY(-30%) skewY(4deg) !important
+                         .owl-prev,
+                         .owl-next
+                              position: absolute
+                              left: auto
+                              right: auto
+                              bottom: -10rem !important
+                              top: auto !important
+                              border: 0px solid red
+                              // width: 100%
+                              background-color: transparent !important
+                              // width: 40px !important
+                              // height: 82px !important
+                              // padding: .5rem !important
+                              @media screen and (min-width: 992px)
+                                   top: auto !important
+                                   bottom: -9rem  !important
+                                   transform: translateY(0%) !important
+                                   background-color: transparent !important
+                                   // padding: 0rem !important
+                              span
+                                   background-image: url('/frontend/images/flecha_navegador1.svg') !important
+                                   background-size: cover !important
+                                   background-repeat: no-repeat !important
+                                   background-position: center !important
+                                   width: 40px !important
+                                   height: 82px !important
+                                   text-indent: 3000px  
+                                   display: block
+                                   overflow: hidden
+
+                         
+                              // span
+                              //      display: none
+                         .owl-prev
+                              left: -1rem
+                              @media screen and (min-width: 992px)
+                                   left: -2rem
+                         .owl-next
+                              right: -1rem
+                              left: auto
+                              transform: translateY(0%) scaleX(-1) !important
+                              @media screen and (min-width: 992px)
+                                   right: -2rem
+                              span
+                                   background-image: url('/frontend/images/flecha_navegador1.svg') !important
+                                   background-size: cover !important
+                                   background-repeat: no-repeat !important
+                                   background-position: center !important
+                    .owl-dots
+                         position: absolute
+                         bottom: -16.5rem
+                         transform: translateX(-50%)
+                         left: 50%
+                         right: auto
+                         top: auto
+                         @media screen and (min-width: 992px)
+                              bottom: -15.5rem
+                         button
+                              width: 20px
+                              height: 20px
+                              border-radius: 50%
+                              border: 1px solid $lightBlue !important
+                              display: inline-block
+                              margin-right: .25rem !important
+                              &:last-child
+                                   margin: 0
+                              &.active
+                                   background-color: $lightBlue !important
+     .boxBotonAccess
+          .boxButtonLink
+               a
+                    &.btnWhatsapp
+                         background: $green
+                         border-color: $green
+                         &:hover
+                              background: $green
+                              border-color: $green
+                              color: white
+                    img
+                         width: 30px
+                         margin-right: .5rem
+          .boxButton
+               button
+                    &:hover
+                         background: $blueLight
+                         border: 3px solid rgba($blueLight, 1)
+                         color: white
+                    &.btnWhatsapp
+                         background: $green
+                         border-color: $green
+                         &:hover
+                              background: $green
+                              border-color: $green
+                              color: white
+               img
+                    width: 30px
+                    margin-right: .5rem
+     .boxCount
+          a,
+          .boxNumber
+               width: 40px
+               height: 40px
+               background: white
+               @include fontFree($gray, 22px,22px,20px,18px, $fontSubTitle)
+               text-align: center
+               line-height: 1.8em
+               &.left
+                    border-left: 1px solid rgba($grayLight3,.2)
+                    border-top: 1px solid rgba($grayLight3,.2)
+                    border-bottom: 1px solid rgba($grayLight3,.2)
+               &.right
+                    border-right: 1px solid rgba($grayLight3,.2)
+                    border-top: 1px solid rgba($grayLight3,.2)
+                    border-bottom: 1px solid rgba($grayLight3,.2)
+          .boxNumber
+               border: 1px solid rgba($grayLight3,.2)
+     .boxContent
+          padding: 3.5rem 0 10rem
+     .separate
+          padding-top: 8.5rem
+          @media screen and (min-width: 992px)
+               padding-top: 3rem
+     .accordion
+          .accordion-item
+               &:not(:first-of-type)
+                    border-top: 1px solid rgba(0, 0, 0, 0.125)
+               .accordion-button
+                    @include fontFree($lightBlue, 16px,14px,14px,14px, $fontSubTitle)
+                    box-shadow: none
+                    &:not(.collapsed)
+                         background-color: white
+                         box-shadow: none
+                         color: $lightBlue
+                    &:focus,
+                    &:active
+                         border-color: transparent
+                         box-shadow: none
+               .accordion-body
+                    padding-bottom: 2rem
+                    @include fontFree($grayLight, 14px,14px,14px,14px, $fontDescription)
+                    line-height: 1.5em
+                    @media screen and (min-width: 992px)
+                         line-height: 1.5em
+                    @media screen and (min-width: 1200px)
+                         line-height: 1.5em
+                    @media screen and (min-width: 1400px)
+                         line-height: 1.5em
+                    p,
+                    a
+                         @include fontFree($grayLight, 14px,14px,14px,14px, $fontDescription)
+                         line-height: 1.5em
+                         @media screen and (min-width: 992px)
+                              line-height: 1.5em
+                         @media screen and (min-width: 1200px)
+                              line-height: 1.5em
+                         @media screen and (min-width: 1400px)
+                              line-height: 1.5em
+     .boxSliderThum
+          .owl-carousel
+               height: 130px
+               @media screen and (min-width: 992px)
+                    height: 130px
+               @media screen and (min-width: 1200px)
+                    height: 150px
+               @media screen and (min-width: 1400px)
+                    height: 155px
+               .owl-item
+                    overflow: hidden
+                    border-radius: 10px
+                    border: 1px solid rgba($grayLight3,.2)
+                    &.current
+                         position: relative
+                         &::before
+                              content: ''
+                              position: absolute
+                              background: rgba($lightBlue,.35)
+                              top: 0
+                              left: 0
+                              z-index: 2
+                              width: 100%
+                              height: 100%
+                              
+               .item
+                    height: 200px
+                    @media screen and (min-width: 992px)
+                         height: 180px
+                    @media screen and (min-width: 1200px)
+                         height: 180px
+                    @media screen and (min-width: 1400px)
+                         height: 180px
+                    .imageFullScreem
+                         width: 100% 
+                         height: 100%
+                         
+                         img
+                              height: 100%
+                              object-fit: cover
+     .boxSlider
+          width: 100%
+          .owl-carousel
+               height: 450px
+               @media screen and (min-width: 768px)
+                    height: 650px
+               @media screen and (min-width: 992px)
+                    height: 550px
+               @media screen and (min-width: 1200px)
+                    height: 550px
+               @media screen and (min-width: 1400px)
+                    height: 600px
+               .item
+                    width: 100%
+                    height: 450px
+                    @media screen and (min-width: 768px)
+                         height: 650px
+                    @media screen and (min-width: 992px)
+                         height: 550px
+                    @media screen and (min-width: 1200px)
+                         height: 550px
+                    @media screen and (min-width: 1400px)
+                         height: 600px
+                    .imageFullScreem
+                         width: 100% 
+                         height: 100%
+                         overflow: hidden
+                         border-radius: 20px
+                         border: 1px solid rgba($grayLight3,.2)
+                         img
+                              width: 100%
+                              height: 100%
+                              object-fit: cover

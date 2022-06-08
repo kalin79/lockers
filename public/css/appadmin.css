@@ -1,0 +1,114 @@
+.list-icon .list-item{
+     margin-right: .5rem
+}
+.min-picture{
+     width: 80px;
+     height: 80px;
+     object-fit: cover;
+}
+
+.height-picture{
+     height: 80px
+}
+
+form h2{
+     font-size: 14px;
+     font-family: 'Tahoma';
+     font-weight: bold;
+}
+
+.boxIcons a{
+     margin-right: .5rem
+}
+
+.boxIcons a svg, .boxIcons svg{
+     width: 1.25rem;
+     height: 1.25rem;
+     color: white;
+     fill: white;
+}
+
+
+
+.boxPicture{
+     width: 120px;
+     height: 80px;
+}
+
+.boxPicture.big{
+     width: 100%;
+}
+
+.boxPicture img{
+     height: 100%;
+}
+
+label.select{
+     border: 0px solid red;
+     width: 100%;
+}
+
+.select2-results__option--highlighted[aria-selected]{
+     background: #3f6ad8;
+     color: white
+}
+.select2-results__option[aria-selected=true]{
+     background: #e0f3ff;
+     color: black
+
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice {
+     display: inline-table;
+     color: #212529;
+     padding: 5px 0.35em 5px 0.35em;
+     margin-left: calc(calc(2.25rem + 2px)/5 - 1px);
+     margin-top: 0;
+     border-radius: 0.2rem;
+     background-color: #e0f3ff;
+     border: 1px solid #94d5ff;
+     cursor: default;
+     vertical-align: top;
+     text-align: center;
+     overflow: hidden;
+     max-width: 100%;
+}
+
+.select2-container--classic .select2-selection--multiple .select2-selection__choice{
+     display: inline-table !important;
+     color: #212529 !important;
+     padding: 5px 0.35em 5px 0.35em !important;
+     margin-left: calc(calc(2.25rem + 2px)/5 - 1px) !important;
+     margin-top: 0 !important;
+     border-radius: 0.2rem !important;
+     background-color: #e0f3ff !important;
+     border: 1px solid #94d5ff !important;
+     cursor: default !important;
+     vertical-align: top !important;
+     text-align: center !important;
+     overflow: hidden !important;
+     max-width: 100% !important;
+}
+
+.boxCountComple{
+     display: block;
+     width: 30px;
+     height: 30px;
+     text-align: center;
+     line-height: 1.7em;
+     background-color: white;
+     color: black;
+     border: 1px solid black;
+     transition: .5s all ease;
+     border-radius: 5px ;
+}
+
+.boxCountComple:hover{
+     background-color: #2daae1;
+     color: white;
+}
+
+.boxIconRelacion p{
+     margin: 0 0 0 .5rem;
+}
+

@@ -1,0 +1,188 @@
+$heightNav: 124px
+$heightNavMobil: 80px
+
+.mainNav
+     height: $heightNavMobil
+     width: 100%
+     box-sizing: border-box
+     position: fixed
+     top: 0rem
+     left: 0
+     z-index: 500
+     @media screen and (min-width: 1200px)
+          height: $heightNav
+     .btnCatalogoMovil
+          margin-top: 2.5rem
+          margin-left: auto
+          margin-right: auto
+          @media screen and (min-width: 1200px)
+               margin-top: 0
+          a
+               width: 200px
+               display: block
+               img
+                    width: 100% 
+     .contentMainNav
+          width: 100%
+          height: $heightNavMobil
+          @media screen and (min-width: 1200px)
+               height: $heightNav
+     .boxBackground
+          position: absolute
+          top: 0
+          left: 0
+          z-index: 1
+          height: $heightNavMobil
+          width: 100%
+          @media screen and (min-width: 1200px)
+               height: $heightNav
+          .boxLeft
+               width: 40%
+               height: 100%
+               background: #ffffff
+               border-bottom: 1px solid $blueLight
+               @media screen and (min-width: 1200px)
+                    width: 25%
+          .boxRight
+               width: 60%
+               height: 100%
+               background: rgba($blueLight, .8)
+               @media screen and (min-width: 1200px)
+                    width: 75%
+     .boxMobileMenu
+          display: block
+          @media screen and (min-width: 1200px)
+               display: none
+          a
+               img
+                    &.btnCatalogo
+                         width: 150px
+                         @media screen and (min-width: 768px)
+                              width: 160px
+                    &.btnMenu
+                         width: 2.5rem
+                         height: 2.5rem
+              
+     nav
+          position: relative
+          z-index: 3
+          border: 0px solid red
+          padding-top: 1.45rem
+          @media screen and (min-width: 1200px)
+               padding-top: 2rem
+          .boxLogo
+               width: 120px
+               @media screen and (min-width: 1200px)
+                    width: 200px
+          .boxNavContent
+               position: fixed
+               left: -100%
+               top: 0
+               width: 100%
+               height: 100%
+               background: rgba(#0e71b8,1)
+               box-sizing: border-box
+               padding: 2rem 0rem 1rem
+               // display: none
+               transition: all 0.5s ease-in
+               @media screen and (min-width: 1200px)
+                    position: relative
+                    top: auto
+                    left: 0
+                    width: auto
+                    background: transparent
+                    padding: 0
+                    height: auto
+                    display: block
+               &.active
+                    left: 0 
+               .boxCloseNav
+                    position: absolute
+                    top: 2rem
+                    right: 2rem
+                    display: block
+                    z-index: 10
+                    @media screen and (min-width: 1200px)
+                         display: none
+                    img
+                         width: 3.5rem
+                         height: 3.5rem
+               .boxNav
+                    .logoMovil
+                         display: block
+                         position: relative
+                         padding-left: 1rem
+                         @media screen and (min-width: 1200px)
+                              display: none
+                         &::before
+                              content: ''
+                              position: absolute
+                              top: -2rem
+                              left: 0
+                              width: 194px
+                              height: 100px
+                              background: white
+
+                         img
+                              width: 150px
+                              position: relative
+                    .boxNavegation
+                         margin-top: 3.5rem
+                         @media screen and (min-width: 1200px)
+                              margin-top: 0
+                         .boxFooter
+                              padding: 1rem 2rem 0 2rem
+                              margin-top: 1.75rem
+                              width: 100%
+                              display: block
+                              @media screen and (min-width: 1200px)
+                                   display: none
+                              .boxSocial
+                                   a
+                                        width: 40px
+                                        height: 40px
+                              p
+                                   color: white
+                                   text-align: center
+                         .boxButton
+                              margin-left: 2rem
+                              margin-top: 2rem
+                              @media screen and (min-width: 1200px)
+                                   margin-left: 0rem
+                                   margin-top: 0rem
+                         .btnNanv
+                              @include fontMainMenu(white,white)
+                              text-align: center
+                              border: 0px solid red
+                              margin-right: 0rem
+                              margin-bottom: 0rem
+                              width: 100%
+                              border-top: 1px solid rgba(#559aca,5)
+                              padding: 1rem 2rem
+                              @media screen and (min-width: 1200px)
+                                   margin-bottom: 0
+                                   margin-right: 1.5rem
+                                   margin-bottom: 0rem
+                                   border-top: 0px solid rgba($blueLight,5)
+                                   border-bottom: 0px solid rgba($blueLight,5)
+                                   padding: 0rem 0
+                                   width: auto
+                              &.navLast
+                                   border-bottom: 1px solid rgba(#559aca,5)
+                                   @media screen and (min-width: 1200px)
+                                        border: 0
+
+                              .boxText
+                                   height: auto
+                                   border: 0px solid red
+                                   margin-left: .5rem
+                                   text-align: left
+                                   @media screen and (min-width: 1200px)
+                                        height: 40px
+                                        margin-left: 0rem
+                                        text-align: center
+                              .boxIcon
+                                   height: 34px
+                                   border: 0px solid green
+                                   img
+                                        height: 100%

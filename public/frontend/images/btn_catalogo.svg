@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 26.3.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 223 57.1" style="enable-background:new 0 0 223 57.1;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#2DAAE1;}
+	.st1{fill:none;stroke:#FFFFFF;stroke-linecap:round;stroke-miterlimit:10;}
+	.st2{fill:#FFFFFF;}
+	.st3{font-family:'Poppins-Medium';}
+	.st4{font-size:13px;}
+</style>
+<path class="st0" d="M211.1,55.4H11.9C6.1,55.4,1.5,50.7,1.5,45V11.8c0-5.8,4.7-10.4,10.4-10.4h199.2c5.8,0,10.4,4.7,10.4,10.4V45
+	C221.5,50.7,216.8,55.4,211.1,55.4z"/>
+<g>
+	<g>
+		<path class="st1" d="M46.9,25.4v11c0,2.8,2.2,5,5,5h18"/>
+		<path class="st1" d="M72.9,29V18.4l-9-9H51.9c-2.8,0-5,2.2-5,5"/>
+		<path class="st2" d="M75.9,36.7v-5c0-0.5-0.4-1-1-1h-4c-0.6,0-1,0.5-1,1v5h-2.6l5.6,5.6l5.6-5.6H75.9z"/>
+		<line class="st1" x1="51.5" y1="26.2" x2="64.5" y2="26.2"/>
+		<line class="st1" x1="51.5" y1="29.2" x2="64.5" y2="29.2"/>
+		<line class="st1" x1="51.5" y1="32.2" x2="64.5" y2="32.2"/>
+		<path class="st1" d="M64,9.4v6.4c0,1.5,1.2,2.8,2.8,2.8h6.2"/>
+		<g>
+			<path class="st2" d="M51,17.6h-0.6v4.3H51c0.2,0,0.3,0,0.4-0.2s0.2-0.2,0.2-0.4v-3.2c0-0.2-0.1-0.3-0.2-0.4
+				C51.3,17.7,51.1,17.6,51,17.6z"/>
+			<path class="st2" d="M47.3,17.6h-0.6v2h0.6c0.2,0,0.3,0,0.4-0.2s0.2-0.2,0.2-0.4v-0.9c0-0.2-0.1-0.3-0.2-0.4
+				C47.6,17.7,47.5,17.6,47.3,17.6z"/>
+			<path class="st2" d="M56,15.3H45.7c-1.3,0-2.3,1-2.3,2.3v4.2c0,1.3,1,2.3,2.3,2.3H56c1.3,0,2.3-1,2.3-2.3v-4.2
+				C58.4,16.4,57.3,15.3,56,15.3z M48.7,19c0,0.4-0.1,0.8-0.4,1s-0.6,0.4-1,0.4h-0.5v2.3h-0.9v-6.2h1.5c0.5,0,0.8,0.1,1.1,0.4
+				c0.2,0.3,0.4,0.6,0.4,1C48.7,18.1,48.7,19,48.7,19z M52.4,21.4c0,0.4-0.1,0.8-0.4,1s-0.6,0.4-1,0.4h-1.5v-6.2H51
+				c0.4,0,0.8,0.2,1,0.4c0.3,0.3,0.4,0.6,0.4,1V21.4z M55.9,17.6h-1.7v1.7h1.3v0.9h-1.3v2.6h-0.9v-6.2h2.7
+				C55.9,16.6,55.9,17.6,55.9,17.6z"/>
+		</g>
+	</g>
+	<text transform="matrix(1 0 0 1 84.0194 24.2318)" class="st2 st3 st4">Descarga</text>
+	<text transform="matrix(1 0 0 1 84.0194 39.8319)" class="st2 st3 st4">Catálogo 2022</text>
+</g>
+</svg>

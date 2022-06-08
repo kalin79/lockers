@@ -1,0 +1,156 @@
+.homeCalidad
+     // background: white
+     .boxContent
+          padding-top: 3rem
+          @media screen and (min-width: 992px)
+               padding-top: 8rem
+          .boxBannerSmall
+               padding: 5rem 0 4rem 
+               @media screen and (min-width: 992px)
+                    padding: 10rem 0 8rem 
+               @media screen and (min-width: 1200px)
+                    padding: 10rem 0 12rem 
+               .imgMapa
+                    width: 100%
+                    height: 50px
+                    @media screen and (min-width: 992px)
+                         height: auto
+               .boxDespacho
+                    position: absolute
+                    left: 51%
+                    top: -3rem
+                    transform: translateX(-50%)
+                    width: 320px
+                    @media screen and (min-width: 992px)
+                         width: 650px
+                         top: -7rem
+                    @media screen and (min-width: 1200px)
+                         top: -5rem
+                    img
+                         width: 150px
+                         @media screen and (min-width: 992px)
+                              width: 300px
+                    .boxDespachoText
+                         padding-left: 0rem
+                         padding-top: 1.5rem
+                         @media screen and (min-width: 992px)
+                              padding-left: 2rem
+                              padding-top: 5rem
+                         @media screen and (min-width: 1200px)
+                              padding-left: 2rem
+                              padding-top: 3rem
+                         p
+                              @include fontFree(white, 22px,20px,18px,12px, 'Poppins')
+                              line-height: 1.25em
+                              font-style: italic
+                              font-weight: 600
+                              @media screen and (min-width: 992px)
+                                   line-height: 1.25em
+                              @media screen and (min-width: 1200px)
+                                   line-height: 1.25em
+                              @media screen and (min-width: 1400px)
+                                   line-height: 1.25em
+                              span
+                                   font-size: 17px
+                                   @media screen and (min-width: 992px)
+                                        // line-height: 1.5em
+                                        font-size: 30px
+                                   @media screen and (min-width: 1200px)
+                                        // line-height: 1.5em
+                                        font-size: 28px
+                                   @media screen and (min-width: 1400px)
+                                        // line-height: 1.5em
+                                        font-size: 26px
+          .boxBackgroundBlue
+               margin-top: 1.5rem
+               @media screen and (min-width: 992px)
+                    margin-top: -6rem
+          .boxDescription
+               padding-top: 2rem
+               @media screen and (min-width: 992px)
+                    padding-top: 3rem
+               p
+                    &.big
+                         text-align: center
+                         line-height: 1.35em
+                         @media screen and (min-width: 992px)
+                              text-align: left
+
+               &.lessTop
+                    padding-top: 2rem
+          .boxBanner
+               background: url('/frontend/images/calidad.jpg')
+               background-size: cover
+               background-repeat: no-repeat
+               width: 100%
+               height: 300px
+               border-radius: 10px
+               @media screen and (min-width: 992px)
+                    height: 550px
+               .boxBannerTitles
+                    padding: 0 0rem 10rem 1.5rem
+                    @media screen and (min-width: 992px)
+                         padding: 0 0rem 4rem 5.5rem
+                    @media screen and (min-width: 1400px)
+                         padding: 0 0rem 2rem 5.5rem
+                    h2
+                         line-height: .8em
+                         @media screen and (min-width: 992px)
+                              line-height: .8em
+                         @media screen and (min-width: 1200px)
+                              line-height: .8em
+                         @media screen and (min-width: 1400px)
+                              line-height: .8em
+.homeCategoria
+     width: 100%
+     box-sizing: border-box
+     .container
+          .separate
+               width: 100%
+               height: 4rem
+               @media screen and (min-width: 1200px)
+                    height: 6rem
+          .boxContent
+               .boxButton
+                    @include styleButton($greenLight3)
+                    button
+                         &:hover
+                              background: $blueLight
+                              border: 3px solid rgba($blueLight, 1)
+                              color: white
+               .boxImage
+                    img
+                         width: 100%
+     .boxIcon
+          position: absolute
+          top: -4rem
+          right: 0
+          display: none
+          @media screen and (min-width: 992px)
+               display: block
+          &.icon2
+               top: -3rem
+               right: auto
+               left: 0rem
+          &.icon3
+               top: 1rem
+               right: -1rem
+          img
+               width: 100px
+
+.homeIntro
+     width: 100%
+     .container
+          padding: 6.5rem 0 5rem
+          .boxBackgroundLockers
+               width: 90%
+               padding: 0
+               border: 0px solid red
+               background: url("/frontend/images/lockers.png")
+               background-size: cover
+               background-repeat: no-repeat
+               height: 390px
+               @media screen and (min-width: 1400px)
+                    height: 450px
+               img
+                    width: 100% 
