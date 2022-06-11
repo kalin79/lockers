@@ -398,20 +398,27 @@ p
 .boxBackgroundBlue
      background: rgba($lightBlue, .8)
      border-radius: 20px 20px 90px 20px
-     padding: 3rem 1rem 3rem 1rem
+     padding: 3rem 1rem .5rem 1rem
      @media screen and (min-width: 992px)
-          padding: 3rem 1rem 3rem 4rem
+          padding: 3rem 1rem .5rem 4rem
+     @media screen and (min-width: 1200px)
+          padding: 3rem 4rem .5rem 4rem
      .boxIcon
           height: 50px
           margin: 0 auto 1rem
           text-align: center
+          &.small
+               img
+                    height: 30px
+                    position: relative
+                    top: 1.25rem
           img
                height: 100%
                object-fit: contain
      p
           color: white
           &.textIcon
-               @include fontFree(white, 18px,16px,14px,12px, $fontDescriptionMedium)
+               @include fontFree(white, 16px,14px,14px,12px, $fontDescriptionMedium)
                line-height: 1.5em
                @media screen and (min-width: 992px)
                     line-height: 1.5em

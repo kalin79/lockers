@@ -18,7 +18,7 @@
                               </div>
                               <div class="boxMobileMenu">
                                    <div class="d-flex justify-content-end align-items-center">
-                                        <a href="/">
+                                        <a href="/frontend/pdf/CatalogoProductosLockersPLUS2022.pdf" target="_blank">
                                              <img src="/frontend/images/btn_catalogo.svg" alt="Descargar Catalogo" class="btnCatalogo">
                                         </a>
                                         <a href="javascript:void(0)" v-on:click="viewMenu()">
@@ -83,7 +83,7 @@
                                              </a>
 
                                              <div class="btnCatalogoMovil">
-                                                  <a href="/">
+                                                  <a href="/frontend/pdf/CatalogoProductosLockersPLUS2022.pdf" target="_blank">
                                                        <img src="/frontend/images/btn_catalogo.svg" alt="Descarga Catalogo">
                                                   </a>
                                              </div>

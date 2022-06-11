@@ -39,6 +39,16 @@
                @include('includes.frontend.header.header')
                @yield('content')
                @include('includes.frontend.footer.footer')
+               <a href="https://wa.link/d5ub3u" target="_blank" class="boxWhatsApp" id="boxWhatsApp">
+                    <div class="relative">
+                        <img src="/frontend/images/whatsApp.svg" alt="" >
+                        <div class="boxTextWhatsApp">
+                            <p>
+                                Contacta con un asesor...
+                            </p>
+                        </div>
+                    </div>
+                </a>
           </div>
     </div>
     {{-- @include('includes.frontend.load.load') --}}
