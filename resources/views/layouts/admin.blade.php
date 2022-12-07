@@ -3,6 +3,10 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- CSRF Token -->
+  <meta name="csrf-token" content="{{ csrf_token() }}">
+
   <title>CMS</title>
 
   <!-- Google Font: Source Sans Pro -->
@@ -38,6 +42,12 @@
      @include('includes.admin.header.cabecera')
      @include('includes.admin.header.menus')
      @yield('content')
+     {{-- <div id ="sparkline-1" ></div>
+     <div id ="sparkline-2" ></div>
+     <div id ="sparkline-3" ></div>
+     <canvas id="revenue-chart-canvas"></canvas>
+     <canvas id="sales-chart-canvas"></canvas>
+     <canvas id="sales-chart-canvas"></canvas> --}}
 </div>
 <!-- ./wrapper -->
 

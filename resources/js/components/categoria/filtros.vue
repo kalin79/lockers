@@ -257,6 +257,13 @@
                               </div>
                          </div>
                     </div>
+                    <div class="row">
+                         <div class="col-12">
+                              <div class="boxButtonTransparent gris">
+                                   <button v-on:click="btnViewFilter()">Buscar</button>
+                              </div>
+                         </div>
+                    </div>
                </div>
           </div>
      </div>

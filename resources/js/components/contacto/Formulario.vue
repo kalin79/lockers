@@ -101,7 +101,7 @@
                                                   <img src="/frontend/images/email.svg" alt="" />
                                              </div>
                                              <div class="boxLink">
-                                                  <a href="mailto:ventas@lockersplus.com.pe" class="colorblueLight">ventas@lockersplus.com.pe</a>
+                                                  <a href="mailto:ventas@lockerplus.com.pe" class="colorblueLight">ventas@lockerplus.com.pe</a>
                                              </div>
                                         </div>
                                    </div>
@@ -112,7 +112,7 @@
                                              </div>
                                              <div class="boxDescripcion">
                                                   <p>
-                                                       938 256 301
+                                                       934299111
                                                   </p>
                                              </div>
                                         </div>

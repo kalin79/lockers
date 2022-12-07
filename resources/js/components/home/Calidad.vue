@@ -19,7 +19,7 @@
                               <div class="col-12 col-md-5 col-xl-5">
                                    <div class="boxDescription">
                                         <p class="big">
-                                             <span class="bold">Lockers Plus, </span>es una <br>
+                                             <span class="bold">LockerPlus Perú, </span>es una <br>
                                              empresa de venta de <br>
                                              Lockers y artículos <br>
                                              complementarios, <br>

@@ -70,6 +70,8 @@ class CategoriaController extends Controller
                 "filtros" => $response,
             ];
 
+            // dd($data);
+
             return $this->successResponse($data);
         }
         catch(ModelNotFoundException $exception){

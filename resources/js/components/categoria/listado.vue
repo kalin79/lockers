@@ -10,7 +10,7 @@
                     <div class="d-flex justify-content-between align-items-star flex-wrap">
                          <a :href="`/producto/${producto.data.slug}`" v-for="(producto, index) in productos" :key="index">
                               <div class="boxImage">
-                                   <img :src="producto.imagen" :alt="producto.data.nombre">
+                                   <img :src="`https://locker.codegraph.pe/${producto.imagen}`" :alt="producto.data.nombre">
                                    
                               </div>
                               <div class="boxInfo">

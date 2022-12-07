@@ -61,9 +61,9 @@
                                                        <img src="/frontend/images/minilocker2.png" alt="">
                                                   </div>
                                                   <p>
-                                                       Fabricada en plástico 100% ABS de alta <br>
-                                                       resistencia a los golpes de impacto, con <br>
-                                                       protección UV, productos totalmente reciclables.
+                                                       Fabricada en plástico ABS de alta <br>
+                                                       resistencia a los golpes de impacto, <br>
+                                                       productos totalmente reciclables.
                                                   </p>
                                                   <div class="boxButton bggris mt-3">
                                                        <button v-on:click="irCatalogo(doneCategory[1].slug)">Ver Catálogo</button>

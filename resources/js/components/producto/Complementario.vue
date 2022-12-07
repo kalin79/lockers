@@ -11,7 +11,7 @@
                                    <div class="item relative" v-for="(complementario, index) in complementarios" :key="index">
                                         <a :href="`/producto/${complementario.data.slug}`">
                                              <div class="boxImage">
-                                                  <img :src="complementario.imagen" alt="">
+                                                  <img :src="`https://locker.codegraph.pe/${complementario.imagen}`" alt="">
                                              </div>
                                              <div class="boxInfo">
                                                   

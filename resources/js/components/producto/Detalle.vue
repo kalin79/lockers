@@ -9,8 +9,8 @@
                                         <div class="item relative" v-for="(galeria,index) in galerias" :key="index">
                                              <div class="imageFullScreem">
                                                   <picture>
-                                                       <source media="(min-width: 992px)" :srcset="galeria.foto">
-                                                       <img :src="galeria.foto" />
+                                                       <source media="(min-width: 992px)" :srcset="`https://locker.codegraph.pe/${galeria.foto}`">
+                                                       <img :src="`https://locker.codegraph.pe/${galeria.foto}`" />
                                                   </picture>
                                              </div>
                                         </div>
@@ -22,8 +22,8 @@
                                         <div class="item relative"  v-for="(galeria,index) in galerias" :key="index">
                                              <div class="imageFullScreem">
                                                   <picture>
-                                                       <source media="(min-width: 992px)" :srcset="galeria.foto">
-                                                       <img :src="galeria.foto" alt="">
+                                                       <source media="(min-width: 992px)" :srcset="`https://locker.codegraph.pe/${galeria.foto}`">
+                                                       <img :src="`https://locker.codegraph.pe/${galeria.foto}`" alt="">
                                                   </picture>
                                              </div>
                                         </div>
@@ -149,7 +149,7 @@
                                                             </tr>
                                                             <tr v-if="(producto.ficha != null ) && (producto.ficha != '')">
                                                                  <td><p class="bold">Descarga ficha t&eacute;cnica:</p></td>
-                                                                 <td><p><a :href="producto.ficha" target="_blank">click aqu&iacute;</a></p></td>
+                                                                 <td><p><a :href="`https://locker.codegraph.pe/${producto.ficha}`" target="_blank">click aqu&iacute;</a></p></td>
                                                             </tr>
                                                             
                                                        </tbody>
@@ -173,7 +173,7 @@
                                         </div>
                                         <div class="boxButtonLink mt-2 large">
                                              <a :href="url" target="_blank" class="btnWhatsapp">
-                                                  <div class="d-flex justify-content-center align-items-center">
+                                                  <div class="d-flex justify-content-center align-items-center fullHeight">
                                                        <img src="/frontend/images/whatsapp_icon.png" >
                                                        <span>Quiero un Asesor</span>
                                                   </div>

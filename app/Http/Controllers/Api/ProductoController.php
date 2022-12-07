@@ -35,7 +35,7 @@ class ProductoController extends Controller
     {
         try{
             // $send = SendEmail::dispatch('carlos.espinoza24g@gmail.com','Hola mundo');
-            $email = ['c.augusto.espinoza@gmail.com','ventas@lockersplus.com.pe'];
+            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe'];
             $send = Mail::to($email)->send(new EmailCotizador($request,1));
             
             $data = [
@@ -63,7 +63,7 @@ class ProductoController extends Controller
         // dd($request["nombre"]);
         try{
             // $send = SendEmail::dispatch('carlos.espinoza24g@gmail.com','Hola mundo');
-            $email = ['c.augusto.espinoza@gmail.com','ventas@lockersplus.com.pe'];
+            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe'];
             $send = Mail::to($email)->send(new EmailCotizador($request,2));
             
             $data = [

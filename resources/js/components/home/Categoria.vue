@@ -9,7 +9,7 @@
                          <div class="row">
                               <div class="col-12 col-lg-5 mb-4">
                                    <div class="boxImage">
-                                        <img :src="doneCategory[0].foto" />
+                                        <img :src="`https://locker.codegraph.pe/${doneCategory[0].foto}`" />
                                    </div>
                               </div>
                               <div class="col-12 col-lg-5">
@@ -50,7 +50,7 @@
                                    <div class="col-2 d-none d-lg-block"></div>
                                    <div class="col-12 col-lg-5 d-block d-lg-none mb-4">
                                         <div class="boxImage">
-                                             <img :src="doneCategory[1].foto" />
+                                             <img :src="`https://locker.codegraph.pe/${doneCategory[1].foto}`" />
                                         </div>
                                    </div>
                                    <div class="col-12 col-lg-5">
@@ -77,7 +77,7 @@
                                    </div>
                                    <div class="col-12 col-lg-5 d-none d-lg-block">
                                         <div class="boxImage">
-                                             <img :src="doneCategory[1].foto" />
+                                             <img :src="`https://locker.codegraph.pe/${doneCategory[1].foto}`" />
                                         </div>
                                    </div>
                               </div>
@@ -94,7 +94,7 @@
                               <div class="row">
                                    <div class="col-12 col-lg-5 mb-4">
                                         <div class="boxImage">
-                                             <img :src="doneCategory[2].foto" />
+                                             <img :src="`https://locker.codegraph.pe/${doneCategory[2].foto}`" />
                                         </div>
                                    </div>
                                    <div class="col-12 col-lg-5">

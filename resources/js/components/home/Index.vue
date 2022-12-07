@@ -1,5 +1,6 @@
 <template>
      <div>
+          <h1 style="display:none">Locker + Plus</h1>
           <home-banner></home-banner>    
           <home-intro></home-intro>
           <cateogria-home></cateogria-home>

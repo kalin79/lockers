@@ -9,7 +9,7 @@
     })(window,document,'script','dataLayer','GTM-WKPMWQT');</script>
     <!-- End Google Tag Manager -->
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, user-scalable=no">
     @yield('meta_tags')
 
     <link href="{{ asset('css/fonts.css') }}" rel="stylesheet">
@@ -27,7 +27,7 @@
                @include('includes.frontend.header.header')
                @yield('content')
                @include('includes.frontend.footer.footer')
-               <a href="https://wa.link/d5ub3u" target="_blank" class="boxWhatsApp" id="boxWhatsApp">
+               <a href="https://wa.link/c2lu7f" target="_blank" class="boxWhatsApp" id="boxWhatsApp">
                     <div class="relative">
                         <img src="/frontend/images/whatsApp.svg" alt="" >
                         <div class="boxTextWhatsApp">

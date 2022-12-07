@@ -59,7 +59,7 @@
                // The setting up of the dropzone
                init: function() {
                     var _myDropzone = this;
-
+                    // alert(2)
                     // First change the button to actually tell Dropzone to process the queue.
                     this.element.querySelector("button[type=submit]").addEventListener("click", function(e) {
                          // Make sure that the form isn't actually being sent.
@@ -88,6 +88,6 @@
           };
 
 
-          // console.log(Dropzone)
+          console.log(Dropzone)
      </script>
 @endsection

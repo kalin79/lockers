@@ -73,6 +73,14 @@ p
                width: 300px
 .boxButtonTransparent
      @include styleButtonTransparent()
+     &.gris
+          button
+               border: 1px solid rgba(#0e71b8, 0.5)
+               color: white
+               border-radius: 19px
+               background: #0e71b8
+               @media screen and (min-width: 1200px)
+                    display: none
 .boxLink
      @include styleLink($yellow, $yellow)
 .boxTitle
@@ -168,8 +176,11 @@ p
 .boxSocial
      padding: .5rem 0
      a
-          width: 30px
-          height: 30px
+          width: 40px
+          height: 40px
+          @media screen and (min-width: 1200px)
+               width: 30px
+               height: 30px
           &.iconSVG
                width: 25px
                height: 25px
@@ -186,6 +197,14 @@ p
                width: 100%
                height: 100%
                display: block
+          svg
+               width: 40px
+               height: 40px
+               fill: white
+               @media screen and (min-width: 1200px)
+                    width: 30px
+                    height: 30px
+
           &:first-child
                margin-right: .35rem
 .pageConstruccion

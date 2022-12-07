@@ -6,8 +6,8 @@
                          <div class="item relative">
                               <div class="imageFullScreem">
                                    <picture>
-                                        <source media="(min-width: 992px)" :srcset="doneCategory.banner">
-                                        <img :src="doneCategory.banner" :alt="doneCategory.nombre">
+                                        <source media="(min-width: 992px)" :srcset="`https://locker.codegraph.pe/${doneCategory.banner}`">
+                                        <img :src="`https://locker.codegraph.pe/${doneCategory.banner}`" :alt="doneCategory.nombre">
                                    </picture>
                               </div>
                               <div class="contentCarrusel">
@@ -21,6 +21,7 @@
                                                                  <path fill-rule="evenodd" d="M4.646 1.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1 0 .708l-6 6a.5.5 0 0 1-.708-.708L10.293 8 4.646 2.354a.5.5 0 0 1 0-.708z"/>
                                                             </svg>
                                                             <a :href="`/categoria/${doneCategory.slug}`">{{ dameNombre(doneCategory.nombre) }}</a>
+                                                            <h1 style="display:none">{{ dameNombre(doneCategory.nombre) }}</h1>
                                                        </div>
                                                        
                                                   </div>

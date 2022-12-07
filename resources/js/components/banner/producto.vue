@@ -6,8 +6,8 @@
                          <div class="item relative">
                               <div class="imageFullScreem">
                                    <picture>
-                                        <source media="(min-width: 992px)" :srcset="doneProducto.banner">
-                                        <img :src="doneProducto.banner" :alt="doneProducto.nombre">
+                                        <source media="(min-width: 992px)" :srcset="`https://locker.codegraph.pe/${doneProducto.banner}`">
+                                        <img :src="`https://locker.codegraph.pe/${doneProducto.banner}`" :alt="doneProducto.nombre">
                                    </picture>
                               </div>
                               <div class="contentCarrusel">
@@ -29,6 +29,8 @@
                                                        
                                                   </div>
                                                   <div class="boxContentBanner">
+                                                       <h1 style="display:none">{{ dameNombre(doneProducto.nombre) }}</h1>
+                                                       
                                                        <h2 class="txtUppercase">
                                                             {{ dameNombre(doneProducto.nombre) }}
                                                        </h2>
