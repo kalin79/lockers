@@ -27,7 +27,7 @@
                @include('includes.frontend.header.header')
                @yield('content')
                @include('includes.frontend.footer.footer')
-               <a href="https://wa.link/c2lu7f" target="_blank" class="boxWhatsApp" id="boxWhatsApp">
+               <a href="https://wa.link/8y73a4" target="_blank" class="boxWhatsApp" id="boxWhatsApp">
                     <div class="relative">
                         <img src="/frontend/images/whatsApp.svg" alt="" >
                         <div class="boxTextWhatsApp">

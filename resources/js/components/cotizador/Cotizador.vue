@@ -43,6 +43,10 @@
                                         <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" v-model="form.nombre"/>
                                    </div>
                                    <div class="col-12 mb-4">
+                                        <label for="nombre" class="mb-2">RUC / DNI:*</label>
+                                        <input type="text" maxlength="9" name="dni" id="dni" placeholder="RUC / DNI" v-model="form.dni"/>
+                                   </div>
+                                   <div class="col-12 mb-4">
                                         <label for="celular" class="mb-2">Número de celular:*</label>
                                         <input type="text" name="celular" id="celular" placeholder="Número de celular" v-model="form.celular"/>
                                    </div>
@@ -127,6 +131,9 @@ export default {
                          descripcion: {
                               required: true,
                          },
+                         dni: {
+                              required: true,
+                         },
                          email: {
                               required: true,
                               email: true
@@ -141,6 +148,9 @@ export default {
                          },
                          descripcion: {
                               required: "Descripción - es obligatorio",
+                         },
+                         dni: {
+                              required: "RUC / DNI - es obligatorio",
                          },
                          email: {
                               required: "Debe completar un correo válido",
@@ -188,6 +198,7 @@ export default {
                     $(".boxButtonCotizar").addClass("ocultar");
                     $(".boxLoadForm").addClass("active");
                     formData.append("cliente", this.form.nombre)
+                    formData.append("dni", this.form.dni)
                     formData.append("email", this.form.email)
                     formData.append("flat_agree", _flat_agree)
                     formData.append("celular", this.form.celular)

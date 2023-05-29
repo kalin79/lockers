@@ -34,13 +34,15 @@ class ProductoController extends Controller
     public function contacto(Request $request)
     {
         try{
+            // dd($request);
             // $send = SendEmail::dispatch('carlos.espinoza24g@gmail.com','Hola mundo');
-            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe'];
+            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe', 'c.augusto.espinoza@gmail.com'];
             $send = Mail::to($email)->send(new EmailCotizador($request,1));
             
             $data = [
                 "send" => $send,
             ];
+            // dd($data);
             return $this->successResponse($data);
         }
         catch(ModelNotFoundException $exception){
@@ -63,7 +65,7 @@ class ProductoController extends Controller
         // dd($request["nombre"]);
         try{
             // $send = SendEmail::dispatch('carlos.espinoza24g@gmail.com','Hola mundo');
-            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe'];
+            $email = ['lockerplus6@gmail.com','ventas@lockerplus.com.pe', 'c.augusto.espinoza@gmail.com'];
             $send = Mail::to($email)->send(new EmailCotizador($request,2));
             
             $data = [

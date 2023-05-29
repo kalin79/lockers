@@ -27,6 +27,14 @@
           </tr>
           <tr>
                <td>
+                    <p style="font-size: 14px; font-family:'Tahoma'; line-height:1.5em;color:#3e3e3e"><strong>RUC / DNI</strong></p>
+               </td>
+               <td>
+                    <p style="font-size: 14px; font-family:'Tahoma'; line-height:1.5em;color:#3e3e3e">{{ $data["ruc"] }}</p>
+               </td>
+          </tr>
+          <tr>
+               <td>
                     <p style="font-size: 14px; font-family:'Tahoma'; line-height:1.5em;color:#3e3e3e"><strong>N&uacute;mero de celular:</strong></p>
                </td>
                <td>

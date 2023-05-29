@@ -15,6 +15,10 @@
                                                   <input type="text" name="nombre" id="nombre" placeholder="Nombres y Apellidos" v-model="form.nombre"/>
                                              </div>
                                              <div class="col-12 col-md-10 mb-4">
+                                                  <label for="nombre" class="mb-2">RUC / DNI:*</label>
+                                                  <input type="text" name="ruc" id="ruc" placeholder="RUC / DNI" v-model="form.ruc"/>
+                                             </div>
+                                             <div class="col-12 col-md-10 mb-4">
                                                   <label for="celular" class="mb-2">Número de celular:*</label>
                                                   <input type="text" name="celular" id="celular" placeholder="Número de celular" v-model="form.celular"/>
                                              </div>
@@ -150,6 +154,9 @@ export default {
                          nombre: {
                               required: true,
                          },
+                         ruc: {
+                              required: true,
+                         },
                          celular: {
                               required: true,
                          },
@@ -164,6 +171,9 @@ export default {
                     messages: {
                          nombre: {
                               required: "Nombre - es obligatorio",
+                         },
+                         ruc: {
+                              required: "RUC / DNI - es obligatorio",
                          },
                          celular: {
                               required: "Celular - es obligatorio",
@@ -181,6 +191,19 @@ export default {
           validateCamposForm: function(){
                $("#celular").keydown(function (e) {
                     if (($("#celular").val().length < 12) || (e.keyCode == 8)){
+                         if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 || (e.keyCode == 65 && e.ctrlKey === true) || (e.keyCode >= 35 && e.keyCode <= 39)) {
+                              return;
+                         }
+                         if ((e.shiftKey || (e.keyCode < 48 || e.keyCode > 57)) && (e.keyCode < 96 || e.keyCode > 105)) {
+                              e.preventDefault();
+                         }
+                    }else{
+                         e.preventDefault();
+                    }
+
+               })
+               $("#ruc").keydown(function (e) {
+                    if (($("#ruc").val().length < 12) || (e.keyCode == 8)){
                          if ($.inArray(e.keyCode, [46, 8, 9, 27, 13, 110, 190]) !== -1 || (e.keyCode == 65 && e.ctrlKey === true) || (e.keyCode >= 35 && e.keyCode <= 39)) {
                               return;
                          }
@@ -221,6 +244,7 @@ export default {
                     formData.append("flat_agree", _flat_agree)
                     formData.append("celular", this.form.celular)
                     formData.append("descripcion", this.form.descripcion)
+                    formData.append("ruc", this.form.ruc)
                     // console.log(this.cantidad)
                     // console.log(this.producto.subtitulo)
                     try{
